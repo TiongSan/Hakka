@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>真平聽力B1L1L2</title>
+  <title>客語聽力_人體與醫療</title>
   <style>
     button {
       font-size: 24px;
@@ -31,7 +31,7 @@
   <script>
     let audioFiles = [];
     let score = 0;
-    let timeLeft = 60;
+    let timeLeft = 600;
     let timer;
     let gameActive = false;
 
@@ -91,14 +91,14 @@
     function startGame() {
       gameActive = true;
       score = 0;
-      timeLeft = 60;
+       = 600;
       document.getElementById('score').innerText = '分數: ' + score;
-      document.getElementById('time').innerText = '剩餘時間: ' + timeLeft;
+      document.getElementById('time').innerText = '剩餘時間: ' + ;
       document.getElementById('restartButton').style.display = 'none';
       timer = setInterval(() => {
-        timeLeft--;
-        document.getElementById('time').innerText = '剩餘時間: ' + timeLeft;
-        if (timeLeft === 0) {
+        --;
+        document.getElementById('time').innerText = '剩餘時間: ' + ;
+        if ( === 0) {
           endGame();
         }
       }, 1000);
@@ -118,9 +118,9 @@
   </script>
 </head>
 <body>
-  <h1>真平聽力B1L1L2</h1>
+  <h1>客語聽力_人體與醫療</h1>
   <br>
-  <h2>網頁編寫:陳文賓老師</h2>
+  <h2>網頁設計:林沁瑩老師</h2>
   <button onclick="startGame()" style="font-size: 24px; padding: 15px; margin: 20px;">開始遊戲</button><br><br>
   <div id="options"></div>
   <div id="score" style="font-size: 24px;">分數: 0</div>
