@@ -47,14 +47,14 @@
     function playRandomAudio() {
       if (!gameActive) return;
       let randomIndex = Math.floor(Math.random() * audioFiles.length);
-      let correctAnswer = audioFiles[randomIndex].name;
+      let correctAnswer = audioFiles[randomIndex].漢字;
       let audio = new Audio(correctAnswer + '.mp3');
       
       audio.oncanplaythrough = () => audio.play();
       audio.onerror = (e) => console.error('無法播放音頻文件:', e);
 
       let correctAnswerDisplay = correctAnswer;
-      let otherOptions = audioFiles.filter(item => item.name !== correctAnswer).map(item => item.name);
+      let otherOptions = audioFiles.filter(item => item.漢字 !== correctAnswer).map(item => item.漢字);
       otherOptions = shuffleArray(otherOptions);
       let allOptions = [correctAnswerDisplay, ...otherOptions.slice(0, 3)];
       allOptions = shuffleArray(allOptions);
