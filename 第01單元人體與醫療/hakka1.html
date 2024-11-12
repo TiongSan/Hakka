@@ -47,14 +47,14 @@
     function playRandomAudio() {
       if (!gameActive) return;
       let randomIndex = Math.floor(Math.random() * audioFiles.length);
-      let correctAnswer = audioFiles[randomIndex].漢字;
+      let correctAnswer = audioFiles[randomIndex].漢字; // 使用 "漢字"
       let audio = new Audio(correctAnswer + '.mp3');
       
       audio.oncanplaythrough = () => audio.play();
       audio.onerror = (e) => console.error('無法播放音頻文件:', e);
 
       let correctAnswerDisplay = correctAnswer;
-      let otherOptions = audioFiles.filter(item => item.漢字 !== correctAnswer).map(item => item.漢字);
+      let otherOptions = audioFiles.filter(item => item.漢字 !== correctAnswer).map(item => item.漢字); // 使用 "漢字"
       otherOptions = shuffleArray(otherOptions);
       let allOptions = [correctAnswerDisplay, ...otherOptions.slice(0, 3)];
       allOptions = shuffleArray(allOptions);
@@ -91,14 +91,14 @@
     function startGame() {
       gameActive = true;
       score = 0;
-       = 600;
+      timeLeft = 600;
       document.getElementById('score').innerText = '分數: ' + score;
-      document.getElementById('time').innerText = '剩餘時間: ' + ;
+      document.getElementById('time').innerText = '剩餘時間: ' + timeLeft;
       document.getElementById('restartButton').style.display = 'none';
       timer = setInterval(() => {
-        --;
-        document.getElementById('time').innerText = '剩餘時間: ' + ;
-        if ( === 0) {
+        timeLeft--;
+        document.getElementById('time').innerText = '剩餘時間: ' + timeLeft;
+        if (timeLeft === 0) {
           endGame();
         }
       }, 1000);
