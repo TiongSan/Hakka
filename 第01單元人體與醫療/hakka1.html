@@ -47,14 +47,14 @@
     function playRandomAudio() {
       if (!gameActive) return;
       let randomIndex = Math.floor(Math.random() * audioFiles.length);
-      let correctAnswer = audioFiles[randomIndex].漢字; // 使用 "漢字"
+      let correctAnswer = audioFiles[randomIndex].name; // 使用 "name" 來播放音頻
+      let correctAnswerDisplay = audioFiles[randomIndex].漢字; // 顯示 "漢字"
       let audio = new Audio(correctAnswer + '.mp3');
       
       audio.oncanplaythrough = () => audio.play();
       audio.onerror = (e) => console.error('無法播放音頻文件:', e);
 
-      let correctAnswerDisplay = correctAnswer;
-      let otherOptions = audioFiles.filter(item => item.漢字 !== correctAnswer).map(item => item.漢字); // 使用 "漢字"
+      let otherOptions = audioFiles.filter(item => item.name !== correctAnswer).map(item => item.漢字);
       otherOptions = shuffleArray(otherOptions);
       let allOptions = [correctAnswerDisplay, ...otherOptions.slice(0, 3)];
       allOptions = shuffleArray(allOptions);
@@ -124,7 +124,7 @@
   <button onclick="startGame()" style="font-size: 24px; padding: 15px; margin: 20px;">開始遊戲</button><br><br>
   <div id="options"></div>
   <div id="score" style="font-size: 24px;">分數: 0</div>
-  <div id="time" style="font-size: 24px;">剩餘時間: 60</div>
+  <div id="time" style="font-size: 24px;">剩餘時間: 600</div>
   <button id="restartButton" onclick="restartGame()">重新開始遊戲</button>
 </body>
 </html>
