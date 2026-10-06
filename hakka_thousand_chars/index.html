@@ -71,7 +71,8 @@ h1{font-family:"Noto Serif TC","Songti TC","PMingLiU",serif;font-size:clamp(34px
 .mini{border:0;background:transparent;color:var(--muted);padding:5px 8px;border-radius:8px}
 .mini:hover{background:#f4efe6;color:var(--ink)}
 .pager{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:18px}
-.pager button{border:1px solid var(--line);background:var(--paper);border-radius:10px;padding:9px 13px}
+.pager button,.pager select{border:1px solid var(--line);background:var(--paper);border-radius:10px;padding:9px 13px}
+.pager select{max-width:min(440px,55vw);color:var(--ink)}
 .pager button:disabled{opacity:.35;cursor:not-allowed}
 .drawer{position:fixed;inset:0;z-index:40;display:none}
 .drawer.open{display:block}
@@ -102,7 +103,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:30px 0}
 <body>
 <header class="topbar">
   <div class="wrap toprow">
-    <div class="brand">客語千字文 <small>自主學習版</small></div>
+    <div class="brand">客語千字文 <small>自主學習版 1.1</small></div>
     <div class="spacer"></div>
     <button class="iconbtn" id="quizBtn">測驗模式</button>
     <button class="iconbtn" id="resetBtn" title="清除本機學習紀錄">重設進度</button>
@@ -165,6 +166,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:30px 0}
   <section class="sentence-list" id="sentenceList"></section>
   <div class="pager">
     <button id="prevPage">← 上一頁</button>
+    <select id="pageJump" aria-label="跳到網站學習頁"></select>
     <span id="pagerText"></span>
     <button id="nextPage">下一頁 →</button>
   </div>
@@ -264,6 +266,16 @@ function render(){
       <div class="card-actions"><button class="mini" data-copy="${s.id}">複製這句</button></div>
     </article>`).join(''):`<div class="panel empty">沒有符合條件的資料。</div>`;
   $('#pagerText').textContent=`${state.page} / ${maxPage}`;
+
+  // Website learning-page jump selector with a preview from the first sentence on each page.
+  const jump = $('#pageJump');
+  jump.innerHTML = Array.from({length:maxPage},(_,i)=>{
+    const p=i+1;
+    const first = all[(p-1)*state.perPage];
+    const preview = first ? first.text.replace(/，/g,'').slice(0,12) : '';
+    return `<option value="${p}" ${p===state.page?'selected':''}>第 ${p} 頁｜${esc(preview)}${preview?'…':''}</option>`;
+  }).join('');
+
   $('#prevPage').disabled=state.page<=1; $('#nextPage').disabled=state.page>=maxPage;
   $('#resultText').textContent=`顯示 ${all.length} / ${state.data.sentenceCount} 句`;
   $('#pageLabel').textContent=state.search||state.annotatedOnly||state.favoritesOnly?'篩選結果':'依原稿順序';
@@ -312,8 +324,12 @@ $('#modeSeg').onclick=e=>{if(e.target.dataset.mode)setMode(e.target.dataset.mode
 $('#hidePinyin').onclick=()=>{state.hidePinyin=!state.hidePinyin;$('#hidePinyin').textContent=state.hidePinyin?'顯示拼音':'隱藏拼音';render()}
 $('#annotationFilter').onclick=()=>{state.annotatedOnly=!state.annotatedOnly;state.page=1;$('#annotationFilter').classList.toggle('primary',state.annotatedOnly);render()}
 $('#favFilter').onclick=()=>{state.favoritesOnly=!state.favoritesOnly;state.page=1;$('#favFilter').classList.toggle('primary',state.favoritesOnly);render()}
-$('#prevPage').onclick=()=>{state.page--;render();scrollTo({top:$('.section-head').offsetTop-80,behavior:'smooth'})}
-$('#nextPage').onclick=()=>{state.page++;render();scrollTo({top:$('.section-head').offsetTop-80,behavior:'smooth'})}
+function scrollToLearning(){
+  scrollTo({top:$('.section-head').offsetTop-80,behavior:'smooth'});
+}
+$('#prevPage').onclick=()=>{state.page--;render();scrollToLearning()}
+$('#nextPage').onclick=()=>{state.page++;render();scrollToLearning()}
+$('#pageJump').onchange=e=>{state.page=Number(e.target.value)||1;render();scrollToLearning()}
 $('#backdrop').onclick=closeDrawer; $('#closeDrawer').onclick=closeDrawer;
 $('#detailFav').onclick=()=>{if(!state.currentDetail)return;const id=state.currentDetail.id;favorites.has(id)?favorites.delete(id):favorites.add(id);save();openDetail(id);render()}
 $('#quizBtn').onclick=()=>{$('#quizPanel').classList.toggle('open');if($('#quizPanel').classList.contains('open')){newQuiz();$('#quizPanel').scrollIntoView({behavior:'smooth',block:'center'})}}
