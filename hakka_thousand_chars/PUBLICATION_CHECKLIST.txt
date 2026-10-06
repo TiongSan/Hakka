@@ -1,0 +1,22 @@
+客語千字文公開網站 — 發布前權利檢查
+
+已處理：
+- TTS Space 程式碼來源標示：ivanusto/tw-hakka-tts（Space metadata: MIT）
+- TTS 模型來源標示：FormoSpeech
+- TTS 模型授權：CC BY-NC 4.0（非商業＋姓名標示）
+- 網站內加入非商業用途說明
+- 加入 TTS 不是官方/真人標準發音的準確度說明
+- 加入 localStorage 與 Hugging Face 第三方傳送的隱私說明
+- 不包含原始掃描 PDF / 頁面圖片
+- 網站程式碼與教材資料的授權範圍分開說明
+
+上線前仍必須由網站發布者確認：
+- 目前「客語拼音、編排、校訂、手寫標記轉錄」來源教材的著作權/授權狀態。
+- 持有紙本或掃描檔本身不等於具有公開上網權利。
+- 若未能確認教材資料有權公開，請勿把 hakka_thousand_chars.json 與其內嵌資料公開部署。
+
+第三方來源（請上線前再核對最新頁面）：
+- https://huggingface.co/spaces/ivanusto/tw-hakka-tts
+- https://huggingface.co/formospeech
+- https://huggingface.co/formospeech/taiwanese-hakka-tts-sixian-hailu-mix-se
+- https://creativecommons.org/licenses/by-nc/4.0/

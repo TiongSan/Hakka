@@ -1,13 +1,13 @@
 {
   "title": "客語千字文",
   "source": "依使用者提供之《客語千字文》14頁掃描資料整理",
-  "version": "1.0",
+  "version": "1.2-public",
   "characterCount": 1000,
   "sentenceCount": 125,
   "pageCount": 14,
   "fields": {
-    "upper": "原印上排",
-    "lower": "原印下排",
+    "upper": "四縣腔（原印上排）",
+    "lower": "海陸腔（原印下排）",
     "annotation": "藍筆校訂／標記"
   },
   "sentences": [
@@ -10011,5 +10011,9 @@
         }
       ]
     }
-  ]
+  ],
+  "dialectMapping": {
+    "upper": "四縣腔",
+    "lower": "海陸腔"
+  }
 }
