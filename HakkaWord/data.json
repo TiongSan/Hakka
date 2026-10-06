@@ -1,13 +1,13 @@
 {
   "title": "客語句子學習",
-  "version": "2.1",
-  "description": "以公開客語文本為核心，擴充為較完整的四縣／海陸句子庫，搭配即時 G2P 拼音與 AI 合成試聽。",
+  "version": "2.2",
+  "description": "以臺灣客語語料庫公開內容整理的四縣／海陸句子學習庫，搭配即時 G2P 拼音與 AI 合成試聽。",
   "source": {
     "name": "臺灣客語語料庫",
     "url": "https://corpus.hakka.gov.tw/",
     "openDataReference": "https://data.gov.tw/dataset/176307",
     "license": "政府資料開放授權條款第1版",
-    "note": "v2.1 內建句子皆由臺灣客語語料庫首頁「口語人物誌」目前公開顯示內容整理成短句，保留腔調與來源人物。"
+    "note": "v2.2 句子由臺灣客語語料庫首頁「口語人物誌」公開顯示內容切分整理，保留腔調與來源人物；部分為口語片段。"
   },
   "tts": {
     "space": "ivanusto/tw-hakka-tts",
@@ -798,6 +798,411 @@
       "dialect": "hailu",
       "dialectLabel": "海陸",
       "text": "斯各儕主人个主意",
+      "sourcePerson": "傅明光",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 88,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "最可憐个就是義民",
+      "sourcePerson": "李能棋",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 89,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "義民斯義民爺",
+      "sourcePerson": "李能棋",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 90,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "客家人分清朝政府收買",
+      "sourcePerson": "李能棋",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 91,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "清朝政府收買摎佢打",
+      "sourcePerson": "李能棋",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 92,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "漳州摎泉州个械鬥",
+      "sourcePerson": "李能棋",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 93,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "个鬥大多了",
+      "sourcePerson": "李能棋",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 94,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "擺擺仔打",
+      "sourcePerson": "李能棋",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 95,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "該打啊去",
+      "sourcePerson": "李能棋",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 96,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "該邊仔肚",
+      "sourcePerson": "彭啟源",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 97,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "原來戴動物園",
+      "sourcePerson": "彭啟源",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 98,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "吂該央時个時節",
+      "sourcePerson": "彭啟源",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 99,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "無一定寫堂",
+      "sourcePerson": "彭啟源",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 100,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "影響著這個客家莊語言个情形啦",
+      "sourcePerson": "黃永達",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 101,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "到尾在該網路頂高咧大家會結群嘛",
+      "sourcePerson": "黃永達",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 102,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "華語講黃牛啊",
+      "sourcePerson": "龔萬灶",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 103,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "身體愛降溫啊",
+      "sourcePerson": "龔萬灶",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 104,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "你有識聽人講",
+      "sourcePerson": "龔萬灶",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 105,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "𫣆客人無愛食牛肉無",
+      "sourcePerson": "龔萬灶",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 106,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "該兜陳情書全部放在𠊎个裡背肚",
+      "sourcePerson": "邱榮舉",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 107,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "其中有一個",
+      "sourcePerson": "邱榮舉",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 108,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "𠊎決定毋愛去",
+      "sourcePerson": "邱榮舉",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 109,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "𠊎放等啊",
+      "sourcePerson": "邱榮舉",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 110,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "𠊎講若兜又愛𠊎負責",
+      "sourcePerson": "邱榮舉",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 111,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "有人講愛準備去",
+      "sourcePerson": "邱榮舉",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 112,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "定著死啊",
+      "sourcePerson": "邱榮舉",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 113,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "當多人會分人捉啊",
+      "sourcePerson": "邱榮舉",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 114,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "還有害著該兜鄉親",
+      "sourcePerson": "邱榮舉",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 115,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "愛就𠊎負責做得",
+      "sourcePerson": "邱榮舉",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 116,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "𠊎無愛去",
+      "sourcePerson": "邱榮舉",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 117,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "做毋得去",
+      "sourcePerson": "邱榮舉",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 118,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "無天良",
+      "sourcePerson": "古蘭妹",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 119,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "何人幫忙出主張哪",
+      "sourcePerson": "古蘭妹",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 120,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "愛二十儕喔",
+      "sourcePerson": "黃秀滿",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 121,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "出一隻皇帝啊",
+      "sourcePerson": "黃秀滿",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 122,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "吂有做著戲个人就愛包這个",
+      "sourcePerson": "黃秀滿",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 123,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "可比尾站吂到个人啊",
+      "sourcePerson": "黃秀滿",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 124,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "𠊎這下人講",
+      "sourcePerson": "黃秀滿",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 125,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "該旗軍仔吂到个人啊",
+      "sourcePerson": "黃秀滿",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 126,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "相㓾乜武打啊",
+      "sourcePerson": "黃秀滿",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 127,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "打大圈",
+      "sourcePerson": "黃秀滿",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 128,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "正衝過去",
+      "sourcePerson": "黃秀滿",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 129,
+      "dialect": "sixian",
+      "dialectLabel": "四縣",
+      "text": "一剖兩剖",
+      "sourcePerson": "黃秀滿",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 130,
+      "dialect": "hailu",
+      "dialectLabel": "海陸",
+      "text": "組成一個兩個字當成一個詞",
+      "sourcePerson": "范文芳",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 131,
+      "dialect": "hailu",
+      "dialectLabel": "海陸",
+      "text": "納卦",
+      "sourcePerson": "傅明光",
+      "sourceType": "臺灣客語語料庫・口語人物誌",
+      "sourceUrl": "https://corpus.hakka.gov.tw/"
+    },
+    {
+      "id": 132,
+      "dialect": "hailu",
+      "dialectLabel": "海陸",
+      "text": "合這個天井个單步",
       "sourcePerson": "傅明光",
       "sourceType": "臺灣客語語料庫・口語人物誌",
       "sourceUrl": "https://corpus.hakka.gov.tw/"
