@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>關於／授權｜客語句子學習</title>
+<style>
+:root{--bg:#f6f2e9;--paper:#fffdf8;--ink:#29261f;--muted:#756e61;--line:#ddd5c6;--accent:#315f52;--warn:#8a5a00}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif}
+.wrap{width:min(900px,calc(100% - 28px));margin:auto}.top{padding:28px 0 8px}a{color:var(--accent)}h1{font-size:34px;margin:10px 0}h2{margin-top:0;font-size:22px}.lead,p,li{line-height:1.85}.lead,.muted{color:var(--muted)}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px;margin:16px 0}.notice{border-left:5px solid #c8912e;background:#fff7df}
+code{background:#f2eee5;padding:2px 5px;border-radius:5px}footer{padding:28px 0;color:var(--muted);font-size:12px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><a href="index.html">← 回到學習網站</a><h1>關於、授權與隱私</h1><div class="lead">這一版將網站從來源待確認的掃描教材，改成以公開客語語料為核心。</div></header>
+
+<section class="card"><h2>網站目的</h2>
+<p>本站提供四縣、海陸客語句子的閱讀、搜尋、收藏、學習進度與隨機複習。AI 拼音與合成音只作學習輔助，不視為真人錄音、官方讀音或人工校訂拼音。</p></section>
+
+<section class="card"><h2>文字資料來源</h2>
+<p>目前內建 20 筆短句取自「臺灣客語語料庫」首頁公開顯示之口語人物誌內容，保留腔調與來源人物。政府資料開放平臺另有「臺灣客語語料庫：客委會出版品或採錄品」資料集，標示「政府資料開放授權條款第1版」。</p>
+<p>正式擴充資料時，應優先使用該開放資料集可合法再利用之內容，並保留來源與授權資訊。</p>
+<p>來源：<a href="https://corpus.hakka.gov.tw/" target="_blank" rel="noopener">臺灣客語語料庫</a>；<a href="https://data.gov.tw/dataset/176307" target="_blank" rel="noopener">政府資料開放平臺資料集</a>。</p></section>
+
+<section class="card notice"><h2>目前資料範圍</h2>
+<p>v2.0 內建的是 20 筆初始句子，用來完成正式網站架構。它不是完整語料庫鏡像，也不宣稱代表所有四縣／海陸用法。日後可以直接擴充 <code>data.json</code>，不需要重寫網站。</p></section>
+
+<section class="card"><h2>AI 拼音與發音</h2>
+<p>當使用者按「取得拼音／發音」時，瀏覽器會直接連到 Hugging Face Space <a href="https://huggingface.co/spaces/ivanusto/tw-hakka-tts" target="_blank" rel="noopener">ivanusto/tw-hakka-tts</a>。目前使用該 Space 提供的 <code>yourtts-htia-240704</code> 客語 TTS 流程。</p>
+<p>FormoSpeech 目前公開說明，其模型採 CC BY-NC 授權，限非商業使用並要求姓名標示。因此本站的 TTS 功能限定為<strong>非商業教育、自學與研究試用</strong>。若網站未來收費、放廣告、作為商業服務的一部分，應停止使用這個 TTS 或另行取得合適授權。</p>
+<p>姓名標示：Hakka TTS model by FormoSpeech；interactive Space by ivanusto/tw-hakka-tts。</p></section>
+
+<section class="card"><h2>準確度</h2>
+<p>G2P 與 TTS 可能在多音字、罕見字、斷詞、文言或特殊語境發生錯誤。本站會把即時結果明確標為 AI 拼音／合成音；使用者不應把它當成官方辭典或客語認證標準答案。</p></section>
+
+<section class="card"><h2>隱私</h2>
+<p>本站沒有帳號系統或自建後端。收藏、學習進度與已取得的拼音快取存放在瀏覽器 <code>localStorage</code>。使用 TTS 時，句子、腔調與必要參數會由瀏覽器送往 Hugging Face Space；第三方服務可能依其政策處理一般網路連線資訊。</p></section>
+
+<section class="card"><h2>網站程式碼</h2>
+<p>本站自行製作的 HTML/CSS/JavaScript 可由發布者以 MIT License 釋出；此授權不包含政府開放資料、第三方模型、第三方 Space、第三方套件或商標。</p></section>
+
+<footer>最後更新：2026-10-06。第三方授權與服務可能變更，正式維護時應定期重新核對。</footer>
+</div>
+</body>
+</html>
